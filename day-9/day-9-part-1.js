@@ -2,7 +2,7 @@ const { Console } = require('console');
 const fs = require('fs');
 
 
-fs.readFile('/Users/zemre/Desktop/advent-of-code-wip/aoc', 'utf8' , (err, data) => {
+fs.readFile('/input', 'utf8' , (err, data) => {
   if (err) {
     console.error("Error message: ", err);
     return;
@@ -48,8 +48,8 @@ fs.readFile('/Users/zemre/Desktop/advent-of-code-wip/aoc', 'utf8' , (err, data) 
 
         var top = [i + neighbors_x[0], j + neighbors_y[0]];
         var right = [i + neighbors_x[1], j + neighbors_y[1]];
-        var left = [i + neighbors_x[2], j + neighbors_y[2]];
-        var bottom = [i + neighbors_x[3], j + neighbors_y[3]];
+        var bottom = [i + neighbors_x[2], j + neighbors_y[2]];
+        var left = [i + neighbors_x[3], j + neighbors_y[3]];
 
         if (isValidIndex(top) == true) {
           if (arr[top[0]][top[1]] <= target) {

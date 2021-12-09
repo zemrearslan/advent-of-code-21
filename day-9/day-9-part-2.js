@@ -2,7 +2,7 @@ const { Console } = require('console');
 const fs = require('fs');
 
 
-fs.readFile('/Users/zemre/Desktop/advent-of-code-wip/aoc', 'utf8' , (err, data) => {
+fs.readFile('/input', 'utf8' , (err, data) => {
   if (err) {
     console.error("Error message: ", err);
     return;
